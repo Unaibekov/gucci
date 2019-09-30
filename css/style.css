@@ -5,6 +5,11 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .dflex {
     display: flex;
 }
@@ -70,9 +75,48 @@ body {
     margin-right: 40px;
 }
 
+.menu-item a:hover {
+    cursor: pointer;
+    color: red;
+}
+
 .menu-icon {
     display: flex;
     align-items: center;
+}
+
+.mega-menu-boys {
+    background: red;
+    position: sticky;
+    top: 80px;
+    display: none;
+    height: 100vh;
+    z-index: 999;
+    width: 100%;
+}
+
+.mega-menu-girls {
+    background: blue;
+    position: sticky;
+    top: 80px;
+    display: none;
+    height: 100vh;
+    z-index: 999;
+    width: 100%;
+}
+
+.mega-menu-about {
+    background: green;
+    position: sticky;
+    top: 80px;
+    display: none;
+    height: 100vh;
+    z-index: 999;
+    width: 100%;
+}
+
+.mega-menu-display {
+    display: block;
 }
 
 .slider{
