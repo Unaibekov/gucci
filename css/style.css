@@ -64,10 +64,13 @@ body {
     margin-right: 40px;
 }
 
+.menu-item:hover {
+    color: red;
+}
+
 .menu-icon {
     display: flex;
     align-items: center;
-    height: ;
 }
 
 .slider{
