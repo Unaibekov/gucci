@@ -11,25 +11,27 @@
 <body>
     <div class="main">
         <div class="header">
-            <div class="logo">            
-                <img src="image/logo.svg">
-                <div class="logo-name">Gucci</div>
-            </div>
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="#">Парни</a>
-                </li>
-                <li class="menu-item">
-                    Девушки
-                </li>
-                <li class="menu-item">
-                    О нас
-                </li>
-            </ul>
-            <div class="menu-icon">
-                <img src="image/search.svg">
-                <img src="image/basket.svg">
-                <img src="image/profile.svg">
+            <div class="container dflex space-between">
+                <div class="logo">            
+                    <img src="image/logo.svg">
+                    <div class="logo-name">Gucci</div>
+                </div>
+                <ul class="menu">
+                    <li class="menu-item">
+                        Парни
+                    </li>
+                    <li class="menu-item">
+                        Девушки
+                    </li>
+                    <li class="menu-item">
+                        О нас
+                    </li>
+                </ul>
+                <div class="menu-icon">
+                    <img src="image/search.svg">
+                    <img src="image/basket.svg">
+                    <img src="image/profile.svg">
+                </div>
             </div>
         </div>
         <div class="slider">
@@ -76,6 +78,39 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
+    <section class="delivery dflex">
+        <div style="overflow: hidden;">
+            <img src="image/an1.jpg" alt="">
+        </div>
+        <div style="height: 100%; width: 400px;">
+            <div style="background: #BDFF00; height: 50%; display: flex; align-content: center; justify-content: center; flex-direction: column;">
+                <div style="padding: 0 20px;">
+                    <div style="font-size: 24px; font-weight: 700; line-height: 1; margin-bottom: 10px;">Бесплатная<br>доставка от 3000Р</div>
+                    <div>Закажи сейчас и получи подарок</div>
+                </div>
+            </div>
+            <div style="overflow: hidden; height: 50%; display: flex; align-content: center; justify-content: center;">
+                <img style="width: 100%; height: auto;" src="image/an2.jpg" alt="">
+            </div>
+        </div>
+        <div style="overflow: hidden;">
+            <img src="image/an3.jpg" alt="">
+        </div>
+
+    </section>
+    <section class="subscription">
+        <div class="container dflex">
+                <div style="font-size: 24px; color:white; width: 50%; text-align: center">Будь в курсе последних новинок</div>
+                <div style="width: 50%;" class="dflex">
+                    <input style="border: none; padding: 10px; width: 50%;" type="text" value="Введи Email">
+                    <div style="
+                        background: #00e1d4;
+                        padding: 10px 20px;
+                        color: white;">
+                    Подписаться</div>
+                </div>
+        </div>
+    </section>
 </body>
 </html>
