@@ -5,12 +5,19 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a {
     color: black;
     text-decoration: none;
 }
 
-
+a:hover {
+    color: red;
+    text-decoration: none;
+}
 
 .navbar {
     overflow: hidden;
@@ -21,38 +28,25 @@ a {
     display: flex;
     justify-content: center;
     height: 80px;
-  }
+    transition: all 0.4s ease-out;
+}
   
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
+.dropdown {
     float: left;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.4s;
   }
   
   /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+  .dropbtn {
+    padding: 25px 16px;
   }
   
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .dropdown .dropbtn:hover {
+    font-weight: 700;
     border-bottom: 3px solid red;
+    transition: 0.4s;
   }
   
   /* Dropdown content (hidden by default) */
@@ -105,10 +99,8 @@ a {
   }
   
   /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .mega-menu-content {
+    display: flex;
   }
 
 
@@ -120,6 +112,13 @@ a {
 
 .space-between {
     justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+.center {
+    justify-content: center;
 }
 
 .main {
@@ -222,7 +221,7 @@ a {
 }
 
 .slider{
-    height: 100vh;
+    height: calc(100vh - 80px);
     width: 100%;
     display: flex;
     margin-top: 80px;
