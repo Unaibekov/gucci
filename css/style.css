@@ -218,6 +218,8 @@ a:hover {
     display: block;
 }
 
+/* slider */
+
 .slider{
     height: calc(100vh - 80px);
     width: 100%;
@@ -251,10 +253,24 @@ a:hover {
     border: 3px solid #00e1d4;
     padding: 16px 40px;
     font-size: 20px;
-    font-weight: 100;
+    /* font-weight: 100; */
     border-radius: 15px;
     margin-top: 130px;
+    transition: 0.2s;
+
 }
+
+.btn-slider:hover {
+    content: "erere";
+    background: #00e1d4;
+    color: white;
+    /* font-weight: 700; */
+    padding: 16px 50px;
+    transition: 0.2s;
+    letter-spacing: 1px;
+
+}
+
 
 .slider-image-block {
     background: url(../image/bg1.jpg) no-repeat center right / cover;
@@ -302,6 +318,7 @@ a:hover {
 .container {
     width: 100%;
     max-width: 1200px;
+    margin: 0 15px;
 }
 
 .delivery {
