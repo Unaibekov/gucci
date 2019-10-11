@@ -7,7 +7,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 a {
     color: black;
@@ -18,91 +18,6 @@ a:hover {
     color: red;
     text-decoration: none;
 }
-
-.navbar {
-    overflow: hidden;
-    background-color: white;
-    position: fixed;
-    top:0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    transition: all 0.4s ease-out;
-}
-  
-.dropdown {
-    height: 80px;
-  }
-  
-  /* Dropdown button */
-  .dropbtn {
-    padding: 25px 16px;
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .dropdown .dropbtn:hover {
-    font-weight: 700;
-    border-bottom: 3px solid red;
-    transition: 0.4s;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #f9f9f9;
-    width: 100%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    top: 80px;
-    height: 100%;
-  }
-  
-  /* Mega Menu header, if needed */
-  .dropdown-content .header {
-    background: red;
-    padding: 16px;
-    color: white;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    background-color: #ccc;
-    height: 250px;
-  }
-  
-  /* Style links inside the columns */
-  .column a {
-    float: none;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a background color on hover */
-  .column a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Clear floats after the columns */
-  .mega-menu-content {
-    display: flex;
-  }
-
-
-
 
 .dflex {
     display: flex;
@@ -126,15 +41,66 @@ a:hover {
     flex-direction: column;
 }
 
-/* .header {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.header {
+    /* overflow: hidden; */
+    background-color: white;
     position: fixed;
-    top: 0;
-    background: white;
-} */
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    transition: all 0.4s ease-out;
+}
+
+.dropdown {
+    /* height: 80px; */
+}
+
+/* Dropdown button */
+.dropbtn {
+    padding: 25px 16px;
+}
+
+  /* Add a red background color to navbar links on hover */
+.dropdown .dropbtn:hover {
+    font-weight: 700;
+    border-bottom: 3px solid red;
+    transition: 0.4s;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 80px;
+    height: 100%;
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+    background: red;
+    padding: 16px;
+    color: white;
+}
+
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.column {
+    width: 33.33%;
+    margin-right: 100px; 
+    display:flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
 
 .logo {
     display: flex;
@@ -154,11 +120,6 @@ a:hover {
 .menu {
     display: flex;
     align-items: center;
-}
-
-.menu li {
-    list-style: none;
-    font-size: 24px;
 }
 
 .menu-icon img {
@@ -184,39 +145,6 @@ a:hover {
     align-items: center;
 }
 
-.mega-menu-boys {
-    background: red;
-    position: sticky;
-    top: 80px;
-    display: none;
-    height: 100vh;
-    z-index: 999;
-    width: 100%;
-}
-
-.mega-menu-girls {
-    background: blue;
-    position: sticky;
-    top: 80px;
-    display: none;
-    height: 100vh;
-    z-index: 999;
-    width: 100%;
-}
-
-.mega-menu-about {
-    background: green;
-    position: sticky;
-    top: 80px;
-    display: none;
-    height: 100vh;
-    z-index: 999;
-    width: 100%;
-}
-
-.mega-menu-display {
-    display: block;
-}
 
 /* slider */
 
@@ -268,9 +196,7 @@ a:hover {
     padding: 16px 50px;
     transition: 0.2s;
     letter-spacing: 1px;
-
 }
-
 
 .slider-image-block {
     background: url(../image/bg1.jpg) no-repeat center right / cover;
@@ -281,6 +207,77 @@ a:hover {
 .slider-image-block img{
     height: 100vh;
 }
+
+
+
+
+
+
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+              transform: translateX(calc(-250px * 7));
+    }
+  }
+  .sliderS {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  .sliderS::before, .sliderS::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .sliderS::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  .sliderS::before {
+    left: 0;
+    top: 0;
+  }
+  .sliderS .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .sliderS .slide {
+    height: 100px;
+    width: 250px;
+  }
+
+
+
+
+
+
+
 
 .new-wear {
     display: flex;
@@ -303,16 +300,24 @@ a:hover {
 }
 .wear-list-items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .wear-item {
     display: flex;
-    margin-right: 30px;
+    margin: 10px 0px;
     box-shadow: 0px 0 40px 10px #0000000d;
+    transition: all 0.4s ease-out;
 }
 
 .wear-item:nth-child(4) {
     margin-right: 0px;
+}
+
+.wear-item:hover {
+    box-shadow: 0px 0 40px 10px #00000040;
+    transition: all 0.4s ease-out;
 }
 
 .container {
